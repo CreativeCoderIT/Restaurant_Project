@@ -16,7 +16,7 @@ $order = $result->fetch_assoc();
 $stmt->close();
 
 // ===== WHATSAPP SETUP =====
-$ownerNumber = "917525962700"; // 🔥 REPLACE WITH YOUR REAL NUMBER (no +)
+$ownerNumber = "123456789"; // 🔥 REPLACE WITH YOUR REAL NUMBER (no +)
 
 $message = "New Order #$orderID\n";
 $message .= "Name: " . $order['customer_name'] . "\n";
