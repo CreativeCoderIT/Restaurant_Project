@@ -121,7 +121,7 @@ function sendOrderMail($orderID,$name, $email, $mobile, $address, $foodItems, $q
         $mail2->SMTPAuth   = true;
         $mail2->CharSet    = 'UTF-8';
         $mail2->Username   = 'shrivastavauttam699@gmail.com';
-        $mail2->Password   = 'jevc ztge nmde ylpp'; // 
+        $mail2->Password   = '**** **** ****'; // 
         $mail2->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail2->Port       = 587;
 
