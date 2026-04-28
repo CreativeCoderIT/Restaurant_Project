@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpiceHeaven Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu-section h2 {
+      font-size: 36px;
+      color: #4CAF50;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #ffccbc;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 30px auto 50px;
+    }
+
+    .menu-item {
+      background-color: #ffffff;
+      border: 2px solid #ffe0b2;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .menu-item h3 {
+      color: #4CAF50;
+      margin: 10px 0 5px;
+    }
+
+    .price {
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .menu-item p {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Starters -->
+<div class="menu-section">
+  <h2>🍽️ Starters</h2>
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1588182728399-e8f2df121744?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Momos">
+      <h3>Momos</h3>
+      <div class="price">₹90</div>
+      <p>Steamed dumplings with spicy chutney, available in veg & chicken.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://media.istockphoto.com/id/2110686868/photo/tortang-talong-with-bread.jpg?s=1024x1024&w=is&k=20&c=1Glu0ORFK0gJyDcZyaPGTgMe_S8eAm0KH987MKnmHMo=" alt="Bread Omlet">
+      <h3>Bread Omlet</h3>
+      <div class="price">₹50</div>
+      <p>Egg omelet with buttered toast, served hot and fresh.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Main Course -->
+<div class="menu-section">
+  <h2>🍛 Main Course</h2>
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="https://media.istockphoto.com/id/968505648/photo/indian-food-or-indian-curry-in-a-copper-brass-serving-bowl-with-bread-or-roti.jpg?s=1024x1024&w=is&k=20&c=UzIUgjHB6AYWlNcTBqwHhkaUo7eJbk6OvRvtYKqUgYw=" alt="Kadhai Paneer">
+      <h3>Kadhai Paneer</h3>
+      <div class="price">₹180</div>
+      <p>Paneer in tangy tomato gravy with capsicum and Indian spices.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://media.istockphoto.com/id/1292438893/photo/traditional-hyderabadi-chicken-dum-biryani-made-of-basmati-rice-cooked-with-masala-spices.jpg?s=1024x1024&w=is&k=20&c=kjSW5CnHMaYNuYvwZdxY3Ghi7ZP6IWUGF02FNdI3ThU=" alt="Veg Biryani">
+      <h3>Veg Biryani</h3>
+      <div class="price">₹150</div>
+      <p>Fragrant rice with veggies, whole spices, and mint raita.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://media.istockphoto.com/id/1205482406/photo/mutton-thali-with-vegetables-rice-and-rotis.jpg?s=1024x1024&w=is&k=20&c=fcIGAHHGqKtaIanaihBgPYUcFyjDrQm2sBNaia81a7g=" alt="Shahi Thali">
+      <h3>Shahi Thali</h3>
+      <div class="price">₹250</div>
+      <p>Deluxe thali with rice, breads, dal, 2 curries, dessert & salad.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1697155406014-04dc649b0953?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmFhbnxlbnwwfHwwfHx8MA%3D%3D" alt="Butter Naan">
+      <h3>Butter Naan</h3>
+      <div class="price">₹30</div>
+      <p>Soft Indian flatbread glazed with melted butter.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Beverages -->
+<div class="menu-section">
+  <h2>☕ Beverages</h2>
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <img src="https://media.istockphoto.com/id/1715209235/photo/glass-of-ice-coffee-latte-with-coffee-beans-on-white-table-cold-beverage-in-summer.jpg?s=1024x1024&w=is&k=20&c=qwsqVrvQxpZ-4Zdb0vsHuz3d0r8L---zo9gUfTpV0IA=" alt="Cold Coffee">
+      <h3>Cold Coffee</h3>
+      <div class="price">₹80</div>
+      <p>Chilled blend of coffee and milk topped with foam & chocolate.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://media.istockphoto.com/id/1054228342/photo/indian-sweets-in-a-plate-includes-gulab-jamun-rasgulla-kaju-katli-morichoor-bundi-laddu.jpg?s=1024x1024&w=is&k=20&c=Ikr6laYV2EDe3TFQ50nC-yzu9N6XV5MrM4rdmP9cqbU=" alt="Dessert">
+      <h3>Dessert</h3>
+      <div class="price">₹60</div>
+      <p>Choice of gulab jamun, rasgulla, or kheer — a sweet end to your meal.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

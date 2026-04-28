@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .menu-toggle {
+      font-size: 30px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .dropdown-list {
+      display: none;
+      flex-direction: column;
+      background-color: #f0f0f0;
+      margin-top: 10px;
+      border-radius: 5px;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-list a {
+      padding: 12px;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      transition: background 0.3s;
+    }
+
+    .dropdown-list a:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hidden Dropdown List -->
+<div id="dropdownMenu" class="dropdown-list">
+  <a href="#">Home</a>
+  <a href="#">Our Menu</a>
+  <a href="#">Order Now</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Feedback</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  }
+</script>
+
+</body>
+</html>

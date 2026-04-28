@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #4CAF50, #2e7d32);
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    /* Glassmorphism Card */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    /* Contact Info Grid */
+    .info-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .info-item {
+      flex: 1;
+      min-width: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .info-item:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .info-item i {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #ffeb3b;
+    }
+
+    .info-item p, .info-item a {
+      font-size: 16px;
+      margin: 6px 0;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .info-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Map */
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .info-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📍 Contact Us</h2>
+
+  <div class="contact-container">
+
+    <div class="glass-card">
+      <div class="info-grid">
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>123 Food Street, New Delhi, India</p>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <p><a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
+        </div>
+        <div class="info-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p><a href="https://wa.me/911234567890" target="_blank">+91 12345 67890</a></p>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.50703877734!2d77.06889935!3d28.52728035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2d0d0bb123b%3A0x9bd2f6f6c1f82e39!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1695465959986!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+  </div>
+
+</body>
+</html>
