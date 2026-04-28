@@ -70,7 +70,7 @@ function sendOrderMail($orderID,$name, $email, $mobile, $address, $foodItems, $q
         $mail->SMTPAuth   = true;
         $mail->CharSet    = 'UTF-8';
         $mail->Username   = 'shrivastavauttam699@gmail.com';
-        $mail->Password   = 'jevc ztge nmde ylpp'; // 
+        $mail->Password   = '**** **** **** ****'; // 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
